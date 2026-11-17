@@ -79,7 +79,8 @@
   .copy{background:var(--yellow);color:#111;flex:1 1 220px}
   .reset{background:#fff;color:#111}
   .privacy{display:none;background:var(--warn);color:#fff;border:var(--bd);padding:10px 14px;margin-top:12px;font-weight:800}
-  .privacy.on{display:block}
+  .privacy.on{display:block;animation:privacyBlink 1s steps(1,end) infinite}
+  @keyframes privacyBlink{0%{background:var(--warn);color:#fff}50%{background:#ffe14d;color:#111}}
 
   .cat{margin:26px 0 12px;display:inline-flex;align-items:center;gap:10px;font-size:1.2rem;font-weight:900;background:var(--cc);border:var(--bd);box-shadow:var(--sh);padding:4px 14px}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
